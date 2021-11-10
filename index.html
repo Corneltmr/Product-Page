@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="brand">
+        <img src="https://cdn.britannica.com/94/193794-050-0FB7060D/Adidas-logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <a href="https://example.com" target="_blank">Link 1</a>
+            <a href="https://example.com" target="_blank">Link 2</a>
+            <a href="https://example.com" target="_blank">Link 3</a>
+        </nav>
+    </header>
+
+    <main class="products">
+        <div class="product">
+            <img src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto,t_ivy/8993e25718ed41c09bb9adb00186513e_faec/Ultra_Boost_Peloton_x_Ivy_Park_Green_GW4208_HM16.jpg" alt="">
+            <span>Ultra Boost Peloton x Ivy Park</span>
+            <span>Ultra Boost</span>
+            <span>£170</span>
+        </div>
+
+        <div class="product">
+            <img src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/268c615aa4f34aad8309ac4e00c806a3_9366/ZX_2K_Boost_Shoes_Black_GY2689_01_standard.jpg" alt="">
+            <span>ZX 2K Boost Shoes</span>
+            <span>Originals</span>
+            <span>£110</span>
+        </div>
+
+        <div class="product">
+            <img src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/5c51ebfc5ade419ebc0face00105ccea_9366/Gazelle_Vintage_Shoes_Blue_H02897_01_standard.jpg" alt="">
+            <span> Gazelle Vintage Shoes</span>
+            <span>Originals</span>
+            <span>£90</span>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; <span>Copyright Adidas</span> 
+    </footer>
+
+</div>
+
+<script>
+    const copyrightYear = document.querySelector('footer span');
+
+    let date = new Date();
+    let year = date.getFullYear();
+
+        copyrightYear.textContent = `Copyright ${year} Adidas`;
+</script>
+    
+</body>
+</html>
